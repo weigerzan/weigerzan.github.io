@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>张家炜 Jiawei Zhang · 个人介绍</title>
+<meta name="description" content="清华大学张家炜的研究与实习经历：逆问题、随机优化、扩散模型蒸馏与 Drift-RAE，以及高效图像与视频生成的研究兴趣。">
+<style>
+:root{color-scheme:light;--ink:#283440;--muted:#64717b;--blue:#294d70;--link:#225c92;--line:#dce3e9;--soft:#f4f7fa;--paper:#fff;--sans:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:28px}body{margin:0;border-top:4px solid var(--blue);font-family:var(--sans);font-size:16px;line-height:1.85;color:var(--ink);background:var(--paper)}a{color:var(--link);text-decoration:none;text-underline-offset:4px}a:hover{text-decoration:underline}a:focus-visible,summary:focus-visible{outline:2px solid var(--link);outline-offset:5px}.page{max-width:1040px;margin:0 auto;padding:28px 42px 35px}.utility{display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:13px;color:var(--muted)}.utility-links{display:flex;gap:20px}.profile{padding:28px 0 23px}.profile h1{font-size:32px;line-height:1.35;letter-spacing:-.6px;font-weight:600;margin:0 0 9px;color:#233c54}.profile h1 span{font-family:Georgia,'Times New Roman',serif;font-size:25px;font-weight:400;margin-left:13px;letter-spacing:0}.affiliation{font-size:14px;color:var(--muted);margin:0 0 17px}.summary{max-width:860px;font-size:16px;margin:0;line-height:1.95}.profile strong{font-weight:600}nav{display:flex;gap:28px;flex-wrap:wrap;padding:0 0 16px;border-bottom:1px solid var(--line);font-size:14px}nav a{color:var(--blue)}section.chapter{padding:35px 0 37px;border-bottom:1px solid var(--line)}.section-heading{display:flex;gap:19px;align-items:baseline;margin-bottom:15px}.section-no{font:12px Consolas,monospace;color:#7b8995}h2{font-size:24px;line-height:1.5;font-weight:600;letter-spacing:0;margin:0;color:#233c54}h3{font-size:18px;font-weight:600;line-height:1.6;margin:0 0 9px}p{margin:0 0 14px}.section-intro{color:var(--muted);font-size:15px;margin-bottom:24px;max-width:900px}.research-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:34px}.research-line{padding-top:18px;border-top:1px solid var(--line);min-width:0}.research-line p{font-size:14px;color:var(--muted)}.research-line strong{color:var(--ink);font-weight:600}.progression{list-style:none;margin:18px 0 0;padding:0}.progression li{display:grid;grid-template-columns:78px 1fr;gap:13px;margin-bottom:16px}.progression .venue{font-size:11px;color:var(--muted);padding-top:3px;line-height:1.7}.progression b{font-size:14px;font-weight:600;display:block}.progression p{font-size:13px;line-height:1.8;margin:3px 0 0}.paper-note{font-size:12px;color:var(--muted);margin:15px 0 0;line-height:1.9}.text-link{font-size:12px;display:inline-block;margin-top:13px}.evidence{font-size:13px;color:var(--muted);line-height:1.8;padding-top:13px;border-top:1px solid var(--line);margin-top:18px}.internship{display:grid;grid-template-columns:175px minmax(0,1fr);column-gap:28px;padding:22px 0;border-top:1px solid var(--line)}.internship:first-of-type{padding-top:0;border-top:0}.company{font-size:17px;font-weight:600;color:#233c54;line-height:1.5}.date{display:block;font-size:12px;color:var(--muted);margin-top:7px;font-weight:400}.role{display:block;font-size:12px;color:var(--muted);margin-top:3px;font-weight:400}.intern-copy h3{font-size:16px;margin-bottom:7px}.intern-copy p{font-size:14px;color:var(--muted);margin:0 0 8px}.intern-copy strong{color:var(--ink);font-weight:600}.project{border-top:1px solid var(--line);padding-top:26px;margin-top:6px}.project-label{font-size:12px;color:var(--muted);margin-bottom:7px}.project h3{font-size:23px;color:#233c54;letter-spacing:-.4px;margin:0 0 4px}.paper-title{font-size:13px;color:var(--muted);margin:0 0 7px}.authors{font-size:12px;color:var(--muted);margin:0 0 18px}.authors strong{color:var(--ink);font-weight:600}.paper-links{display:flex;gap:21px;flex-wrap:wrap;font-size:13px;margin:0 0 23px}.project-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:30px;align-items:start}.project-copy p{font-size:14px;line-height:1.9;margin-bottom:15px}.project-copy strong{font-weight:600}.project-copy h4{font-size:15px;margin:0 0 5px;font-weight:600}.method-list{padding-left:21px;margin:10px 0 0;font-size:13px;color:var(--muted)}.method-list li{padding-left:4px;margin:0 0 12px}.method-list strong{color:var(--ink);font-weight:600}.samples{margin:0;min-width:0}.samples a{display:block}.samples img{display:block;width:100%;height:auto;border:1px solid #e3e8ed}.samples figcaption{font-size:11px;color:var(--muted);margin-top:8px;line-height:1.8}.results{display:grid;grid-template-columns:1fr 1fr 1fr;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:17px 0;margin-top:22px}.stat{padding:0 22px;border-left:1px solid var(--line)}.stat:first-child{padding-left:0;border-left:0}.stat b{display:block;font-size:26px;line-height:1.4;font-weight:550;color:#233c54;letter-spacing:-.5px}.stat small{font-size:13px;letter-spacing:0;font-weight:400}.stat span{font-size:12px;color:var(--muted);display:block;margin-top:4px;line-height:1.65}.result-note{font-size:11px;color:var(--muted);margin-top:10px;line-height:1.8}.contribution{margin-top:21px;font-size:14px;padding-left:17px;border-left:2px solid #b6c7d5}.contribution p{margin:0}.contribution strong{font-weight:600}.interest{display:grid;grid-template-columns:175px minmax(0,1fr);gap:28px;padding:23px 0;border-top:1px solid var(--line)}.interest:first-of-type{border-top:0;padding-top:0}.horizon{font-size:13px;color:var(--blue);padding-top:3px;font-weight:600}.horizon span{display:block;font-size:12px;color:var(--muted);font-weight:400;line-height:1.7;margin-top:6px}.interest h3{font-size:17px}.interest p{font-size:14px;line-height:1.95;color:var(--muted);margin-bottom:11px}.interest strong{color:var(--ink);font-weight:600}.interest .next-step{font-size:13px}.interest-links{font-size:12px;padding-top:7px;color:var(--muted)}.closing{padding:17px 0 0;margin:0;font-size:14px;line-height:1.9;color:var(--muted);border-top:1px solid var(--line)}footer{display:flex;justify-content:space-between;gap:20px;font-size:12px;color:var(--muted);padding:23px 0 0}footer a{color:var(--muted)}.skip{position:absolute;left:12px;top:-100px}.skip:focus{top:12px;background:white;padding:10px;z-index:20}
+@media(max-width:800px){.page{padding:24px 26px 30px}.research-grid{gap:25px}.project-grid{grid-template-columns:1fr 1fr;gap:23px}.internship,.interest{grid-template-columns:145px minmax(0,1fr);gap:22px}h2{font-size:22px}.profile h1{font-size:30px}.summary{font-size:15px}.stat{padding:0 15px}}
+@media(max-width:620px){.page{padding:21px 19px 27px}.utility{font-size:12px}.utility-links{gap:14px}.profile{padding:25px 0 21px}.profile h1{font-size:29px}.profile h1 span{font-size:21px;margin-left:9px}.affiliation{font-size:12px;line-height:1.9}.summary{font-size:14px}.research-grid,.project-grid{grid-template-columns:1fr;gap:24px}.internship,.interest{grid-template-columns:1fr;gap:13px}.company{font-size:16px}.date,.role{display:inline-block;margin:0 0 0 12px;font-size:11px}.internship{padding:20px 0}.intern-copy h3{font-size:15px}.interest{padding:22px 0}.horizon{font-size:13px}.horizon span{display:inline;margin-left:12px;font-size:11px}.section-heading{gap:12px}h2{font-size:20px}.section-no{font-size:11px}.section-intro{font-size:14px}.project h3{font-size:22px}.stat{padding:0 11px}.stat b{font-size:22px}.stat span{font-size:11px}.stat small{font-size:11px}.samples{max-width:450px;margin:0 auto}.method-list{font-size:13px}.progression li{grid-template-columns:74px 1fr;gap:10px}nav{gap:11px 23px;font-size:13px}section.chapter{padding:29px 0 31px}footer{display:block;font-size:11px}footer span{display:block;margin-top:4px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{body{border:0;background:white;font-size:11px}.page{max-width:none;padding:0}.utility,nav,.skip{display:none}.profile{padding:0 0 18px}.profile h1{font-size:25px}.summary,.section-intro{font-size:11px}section.chapter{padding:20px 0}.section-heading{break-after:avoid}h2{font-size:18px}h3{break-after:avoid}.research-grid{gap:24px}.research-line p,.intern-copy p,.project-copy p,.interest p{font-size:11px}.internship,.interest{grid-template-columns:125px 1fr;gap:20px;break-inside:avoid}.project-grid{grid-template-columns:1.1fr 1fr;gap:20px}.results{break-inside:avoid}.paper-note,.evidence,.authors,.paper-links,.method-list,.result-note,.next-step{font-size:10px!important}.samples{break-inside:avoid}a{color:inherit}.stat b{font-size:22px}.stat span{font-size:10px}.closing{font-size:11px}footer{font-size:10px}}
+.research-figure{margin:18px 0 22px}.research-figure figcaption{font-size:11px;color:var(--muted);line-height:1.8;margin-top:10px}.research-figure figcaption strong{color:var(--ink);font-weight:600}.inverse-example{display:grid;grid-template-columns:minmax(0,1fr) 48px minmax(0,1fr);align-items:center;gap:12px;max-width:390px;margin:0 auto}.inverse-example img{width:100%;height:auto;display:block;aspect-ratio:1;border:1px solid var(--line)}.inverse-example>div>span{display:block;font-size:11px;text-align:center;margin-top:7px;color:var(--muted)}.inverse-arrow{align-self:center;padding-bottom:20px;text-align:center}.inverse-arrow b{display:block;font-size:27px;font-weight:400;line-height:1.25;color:var(--blue)}.inverse-example .inverse-arrow span{font-size:11px;margin:0}.theory-figure>a{display:block;border:1px solid var(--line);padding:7px;background:#fff}.theory-figure img{display:block;width:100%;height:auto}.theory-figure a:hover{border-color:#98adbf}.theory-figure figcaption a{white-space:nowrap}@media(max-width:620px){.inverse-example{max-width:370px;gap:10px;grid-template-columns:minmax(0,1fr) 40px minmax(0,1fr)}.theory-figure img{min-width:0}}@media print{.research-figure{break-inside:avoid}.research-figure figcaption{font-size:9px}.inverse-example{max-width:275px}}
+.step-distillation{margin:0 0 25px;padding:19px 0 23px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.step-distillation h3{font-size:15px;font-weight:600;margin:0 0 20px}.rollout-row{display:grid;grid-template-columns:152px minmax(0,1fr);gap:24px;align-items:center}.rollout-label{font-size:13px;color:var(--ink);font-weight:600}.rollout-label small{display:block;font-size:11px;font-weight:400;color:var(--muted);margin-top:3px}.rollout-track{display:flex;gap:10px;align-items:center;min-width:0}.rollout-model{flex:1;min-width:0;border:1px solid #bdcad5;background:#f5f8fa;padding:7px 10px;text-align:center;font-size:12px;line-height:1.5}.rollout-end{flex:0 0 43px;text-align:center;font-size:12px}.rollout-arrow{color:#8295a5;font-size:19px;line-height:1;flex:0 0 auto}.rollout-ellipsis{font-size:17px;color:var(--muted);padding:0 3px}.rollout-transfer{font-size:11px;color:var(--muted);margin:8px 43px 8px 176px;text-align:center}.rollout-transfer span{font-size:16px;color:var(--blue);margin-right:6px}.student-track .rollout-model{background:#edf3f8;border-color:#9cb2c5;color:var(--blue)}@media(max-width:620px){.step-distillation{padding:17px 0 21px}.step-distillation h3{font-size:14px;margin-bottom:16px}.rollout-row{grid-template-columns:1fr;gap:9px}.rollout-label{font-size:12px}.rollout-label small{display:inline;margin-left:12px;font-size:10px}.rollout-track{gap:5px}.rollout-end{flex-basis:29px;font-size:11px}.rollout-model{font-size:11px;padding:7px 4px}.rollout-arrow{font-size:16px}.rollout-ellipsis{font-size:15px;padding:0}.rollout-transfer{margin:9px 0;text-align:center}.student-track .rollout-model{flex:0 1 90px}.student-track{justify-content:space-between}}@media print{.step-distillation{break-inside:avoid}.rollout-label,.rollout-model,.rollout-end{font-size:10px}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<div class="page">
+<header>
+  <div class="utility"><a href="../index.html">← 主页</a><div class="utility-links"><a href="../Jiawei_Zhang_CV.pdf">CV</a><a href="https://scholar.google.com/citations?user=m4aFFooAAAAJ&amp;hl=zh-CN">Google Scholar</a></div></div>
+  <div class="profile">
+    <h1>张家炜 <span>Jiawei Zhang</span></h1>
+    <p class="affiliation">清华大学电子工程系 · 博士生 · 导师：谷源涛教授<br>2019–2023 清华本科 · 2023 年起攻读博士</p>
+    <p class="summary">我的研究关注<strong>高效视觉生成</strong>。在学校，主要研究逆问题与随机优化，积累数学建模和理论分析的基础；在腾讯混元与 Ant Research 实习期间，进一步开展扩散模型蒸馏，研究图像编辑与一步图像生成。接下来希望继续探索生成模型的高效训练、推理与视频蒸馏。</p>
+  </div>
+  <nav aria-label="个人介绍章节"><a href="#research">研究经历</a><a href="#internships">实习与 Drift-RAE</a><a href="#interests">研究兴趣</a></nav>
+</header>
+<main id="main">
+<section class="chapter" id="research" aria-labelledby="research-title">
+  <div class="section-heading"><span class="section-no">01</span><h2 id="research-title">研究经历：逆问题与随机优化</h2></div>
+  <p class="section-intro">学校里的研究以数学建模、算法设计与理论分析为主：既研究如何利用生成先验求解问题，也研究优化算法本身的行为与收敛条件。</p>
+  <div class="research-grid">
+    <article class="research-line">
+      <h3>逆问题：从不完整观测恢复信息</h3>
+      <p>面对模糊、缺损或低分辨率的图像，研究如何结合观测与扩散模型先验，得到更可靠的重建。围绕<strong>重建质量、计算效率和输出目标</strong>，形成了一条连续的研究主线。</p>
+      <figure class="research-figure inverse-figure">
+        <div class="inverse-example" role="img" aria-label="逆问题示意：从退化观测恢复原始图像。">
+          <div><img src="assets/inverse-observation.png" width="256" height="256" alt="退化观测：像素化的高尔夫球图像。" decoding="async"><span>退化观测</span></div>
+          <div class="inverse-arrow"><span>恢复</span><b aria-hidden="true">→</b></div>
+          <div><img src="assets/inverse-target.png" width="256" height="256" alt="待恢复原始图像：清晰的高尔夫球。" decoding="async"><span>待恢复原始图像</span></div>
+        </div>
+      </figure>
+      <ol class="progression">
+        <li><span class="venue">NeurIPS<br>2024</span><div><b>ProjDiff · 设计求解方法</b><p>更充分地利用扩散模型的去噪能力，处理带噪观测下的重建。</p></div></li>
+        <li><span class="venue">NeurIPS<br>2025</span><div><b>LLE · 改善少步推理</b><p>复用历史估计，在有限的采样步数下改善重建质量。</p></div></li>
+        <li><span class="venue">ICML<br>2026</span><div><b>MAP-RPS · 控制重建目标</b><p>研究像素误差与感知质量的取舍，使重建结果能够按需求调节。</p></div></li>
+      </ol>
+      <p class="evidence">三篇工作均为第一作者论文。</p>
+      <a class="text-link" href="../inverse-problems/index.html">三篇工作的详细介绍 →</a>
+    </article>
+    <article class="research-line">
+      <h3>随机优化：步长与动量的收敛分析</h3>
+      <p>研究随机梯度方法中的<strong>自适应步长与动量机制</strong>：如何根据优化过程调整更新幅度，以及这类方法在什么条件下能够稳定收敛。</p>
+      <figure class="research-figure theory-figure">
+        <a href="assets/shb-theory-table.png" aria-label="放大查看随机重球优化论文 Table 1 的理论结果汇总"><img src="assets/shb-theory-table.png" width="1610" height="606" alt="论文 Table 1：强凸、凸和非凸目标下，使用 Polyak 步长和 Armijo 线搜索的随机重球方法的收敛结果，包含定理 1 至 7。" decoding="async"></a>
+      </figure>
+      <p class="paper-note"><a href="https://ieeexplore.ieee.org/document/10836899">Adaptive Polyak Step-Size for Momentum Accelerated Stochastic Gradient Descent with General Convergence Guarantee</a><br>IEEE Transactions on Signal Processing · 第一作者</p>
+      <p class="paper-note"><a href="https://arxiv.org/abs/2609.36668">Stochastic Heavy Ball with Polyak Step Size and Armijo Line Search: A General Convergence Analysis</a><br>arXiv · 第一作者</p>
+      <p class="evidence">研究积累：从问题建模和算法推导，到理论分析与实验验证。</p>
+    </article>
+  </div>
+</section>
+<section class="chapter" id="internships" aria-labelledby="internships-title">
+  <div class="section-heading"><span class="section-no">02</span><h2 id="internships-title">实习经历：扩散模型蒸馏</h2></div>
+  <p class="section-intro">两段实习都围绕同一个问题展开：如何减少扩散模型的生成步数，同时尽量保留编辑能力和生成质量。</p>
+  <figure class="step-distillation" aria-labelledby="step-distillation-title">
+    <h3 id="step-distillation-title">步数蒸馏：减少生成步数，加速推理</h3>
+    <div class="rollout-row">
+      <div class="rollout-label">多步教师<small>多次调用模型</small></div>
+      <div class="rollout-track" aria-label="教师推理：从噪声开始，多次调用模型，逐步生成图像。">
+        <span class="rollout-end">噪声</span><span class="rollout-arrow" aria-hidden="true">→</span>
+        <span class="rollout-model">模型</span><span class="rollout-arrow" aria-hidden="true">→</span>
+        <span class="rollout-model">模型</span><span class="rollout-arrow" aria-hidden="true">→</span>
+        <span class="rollout-ellipsis" aria-hidden="true">…</span><span class="rollout-arrow" aria-hidden="true">→</span>
+        <span class="rollout-model">模型</span><span class="rollout-arrow" aria-hidden="true">→</span><span class="rollout-end">图像</span>
+      </div>
+    </div>
+    <div class="rollout-transfer"><span aria-hidden="true">↓</span>蒸馏训练</div>
+    <div class="rollout-row">
+      <div class="rollout-label">少步 / 一步学生<small>更少的模型调用</small></div>
+      <div class="rollout-track student-track" aria-label="蒸馏后推理：从噪声开始，以更少的模型调用生成图像，实现推理加速。">
+        <span class="rollout-end">噪声</span><span class="rollout-arrow" aria-hidden="true">→</span><span class="rollout-model">学生模型</span><span class="rollout-arrow" aria-hidden="true">→</span><span class="rollout-end">图像</span>
+      </div>
+    </div>
+  </figure>
+  <article class="internship">
+    <div class="company">腾讯混元<span class="date">2025.06–2025.08</span><span class="role">Research Intern</span></div>
+    <div class="intern-copy"><h3>图像编辑的少步蒸馏</h3><p>基于 FLUX Kontext，研究高效图像编辑，探索 <strong>Consistency Models 与 DMD2</strong> 的蒸馏训练与评估。</p></div>
+  </article>
+  <article class="internship">
+    <div class="company">Ant Research<span class="date">2025.12 起</span><span class="role">Research Intern</span></div>
+    <div class="intern-copy"><h3>基于 RAE 的一步图像生成</h3><p>在表征自编码器（RAE）的潜空间中开展 Diffusion Transformer 蒸馏，形成 <strong>Drift-RAE</strong> 工作。</p></div>
+  </article>
+  <article class="project" id="drift-rae" aria-labelledby="drift-title">
+    <p class="project-label">代表工作 · 第一作者 · arXiv</p>
+    <h3 id="drift-title">Drift-RAE</h3>
+    <p class="paper-title">Distilling Drifting Transformers with Representation Autoencoders</p>
+    <p class="authors"><strong>Jiawei Zhang</strong>, Mengfei Xia, Gen Li, Yuantao Gu</p>
+    <div class="paper-links"><a href="https://arxiv.org/abs/2606.15553">论文</a><a href="../drift-rae/index.html">方法与实验的详细介绍</a></div>
+    <div class="project-grid">
+      <div class="project-copy">
+        <h4>研究问题</h4>
+        <p>RAE 提供了语义信息丰富的生成空间，但现有多步模型的能力不容易直接压缩成一步。我们希望在这一空间里实现<strong>高质量的一步生成</strong>。</p>
+        <h4>主要思路</h4>
+        <p>从分析 RAE 的表征几何出发，用 <strong>Drifting 直接匹配生成样本与真实数据的分布</strong>，训练模型一次输出生成结果。</p>
+        <ol class="method-list">
+          <li><strong>选择适合表征空间的蒸馏方式。</strong>利用样本之间的吸引与排斥，使生成分布逐渐接近数据分布。</li>
+          <li><strong>改进训练稳定性与分布估计。</strong>围绕扰动、样本组织和训练目标进行设计与验证。</li>
+          <li><strong>利用模型内部信息进一步改善质量。</strong>提出 Internal Drifting Guidance，在保持一次主干前向的同时进行引导。</li>
+        </ol>
+      </div>
+      <figure class="samples"><a href="assets/drift-rae-samples.webp" aria-label="查看 Drift-RAE 论文生成样本大图"><img src="assets/drift-rae-samples.webp" width="1200" height="1200" alt="Drift-RAE 论文 Figure 2 中的一步生成结果，包含动物、物品、食物与自然场景。" decoding="async"></a><figcaption>论文真实生成样本 · Figure 2<br>ImageNet 256 × 256 类别条件生成 · DiTᴰᴴ-XL</figcaption></figure>
+    </div>
+    <div class="results" aria-label="Drift-RAE 主要结果">
+      <div class="stat"><b>50 × 2 → 1 <small>NFE</small></b><span>从多步教师到一步生成器<br>生成主干的调用次数</span></div>
+      <div class="stat"><b>1.48 <small>FID ↓</small></b><span>ImageNet 256 × 256<br>生成分布质量指标，越低越好</span></div>
+      <div class="stat"><b>16 <small>epochs</small></b><span>从预训练模型初始化<br>蒸馏阶段的训练轮数</span></div>
+    </div>
+    <p class="result-note">结果采用 DiTᴰᴴ-XL + IDG。预训练教师为 50 × 2 NFE、FID 1.13；一步模型为 1 NFE、FID 1.48。NFE 指生成主干调用次数，完整推理还包含解码；16 epochs 不包含教师预训练。</p>
+  </article>
+</section>
+<section class="chapter" id="interests" aria-labelledby="interests-title">
+  <div class="section-heading"><span class="section-no">03</span><h2 id="interests-title">研究兴趣：高效图像与视频生成</h2></div>
+  <p class="section-intro">我希望继续围绕生成模型的效率与质量开展研究：近期关注蒸馏与强化学习的结合，长远探索结构信息如何帮助视频生成与蒸馏。</p>
+  <article class="interest">
+    <div class="horizon">近期方向<span>蒸馏 + GRPO</span></div>
+    <div><h3>改善少步生成模型的随机采样与优化</h3><p><strong>关注的问题：</strong>用 GRPO 优化少步生成模型时，需要采样多个候选结果进行组内比较。采样引入的随机性，以及模型更新后的分布变化，可能使训练采样与实际推理出现差异。</p><p><strong>研究想法：</strong>DMD 蒸馏本身会维护一个追踪生成分布的辅助模型。我希望研究能否复用它提供的 score 信息，改善 GRPO 的随机 rollout，使采样方向更好地适应更新中的模型。</p><p class="next-step"><strong>预期价值：</strong>在有限步数与计算预算下，改善联合训练的采样质量和稳定性，并验证收益能否体现在最终生成结果上。</p></div>
+  </article>
+  <article class="interest">
+    <div class="horizon">长远方向<span>视频蒸馏 + 三维结构</span></div>
+    <div><h3>在加速视频生成时保留空间与运动一致性</h3><p><strong>关注的问题：</strong>视频模型在减少生成步数后，能否保持跨帧的场景结构、物体形态与运动一致性？</p><p><strong>研究想法：</strong>探索在蒸馏中显式利用深度、相机几何和跨帧轨迹等信息。先从可测量的几何一致性入手，再逐步考虑动态物体与更明确的物理约束。</p><p class="next-step"><strong>长期目标：</strong>让少步视频生成在提升效率的同时，更好地保持时空结构与运动合理性。当前重点是明确任务、约束与评估方式。</p></div>
+  </article>
+  <div class="interest-links"><a href="../research-plan/index.html">研究计划的详细版本 →</a></div>
+</section>
+</main>
+<footer><span>张家炜 · Jiawei Zhang</span><span><a href="mailto:jiawei-z23@mails.tsinghua.edu.cn">jiawei-z23@mails.tsinghua.edu.cn</a> · <a href="../index.html">主页</a></span></footer>
+</div>
+</body>
+</html>
