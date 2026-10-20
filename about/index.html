@@ -132,10 +132,10 @@
 </section>
 <section class="chapter" id="interests" aria-labelledby="interests-title">
   <div class="section-heading"><span class="section-no">03</span><h2 id="interests-title">研究兴趣：高效图像与视频生成</h2></div>
-  <p class="section-intro">我希望继续围绕生成模型的效率与质量开展研究：近期关注蒸馏与强化学习的结合，长远探索结构信息如何帮助视频生成与蒸馏。</p>
+  <p class="section-intro">希望继续围绕生成模型的效率与质量开展研究：近期关注蒸馏与强化学习的结合，长远探索结构信息如何帮助视频生成与蒸馏。</p>
   <article class="interest">
     <div class="horizon">近期方向<span>蒸馏 + GRPO</span></div>
-    <div><h3>改善少步生成模型的随机采样与优化</h3><p><strong>关注的问题：</strong>用 GRPO 优化少步生成模型时，需要采样多个候选结果进行组内比较。采样引入的随机性，以及模型更新后的分布变化，可能使训练采样与实际推理出现差异。</p><p><strong>研究想法：</strong>DMD 蒸馏本身会维护一个追踪生成分布的辅助模型。我希望研究能否复用它提供的 score 信息，改善 GRPO 的随机 rollout，使采样方向更好地适应更新中的模型。</p><p class="next-step"><strong>预期价值：</strong>在有限步数与计算预算下，改善联合训练的采样质量和稳定性，并验证收益能否体现在最终生成结果上。</p></div>
+    <div><h3>改善少步生成模型的随机采样与优化</h3><p><strong>关注的问题：</strong>用 GRPO 优化少步生成模型时，需要采样多个候选结果进行组内比较。采样引入的随机性，以及模型更新后的分布变化，可能使训练采样与实际推理出现差异。</p><p><strong>研究想法：</strong>DMD 蒸馏本身会维护一个追踪生成分布的辅助模型。希望研究能否复用它提供的 score 信息，改善 GRPO 的随机 rollout，使采样方向更好地适应更新中的模型。</p><p class="next-step"><strong>预期价值：</strong>在有限步数与计算预算下，改善联合训练的采样质量和稳定性，并验证收益能否体现在最终生成结果上。</p></div>
   </article>
   <article class="interest">
     <div class="horizon">长远方向<span>视频蒸馏 + 三维结构</span></div>
